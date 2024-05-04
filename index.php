@@ -16,10 +16,9 @@ include "header.php";
             <div class="col-lg-6 align-self-center text-center text-lg-start mb-lg-5">
                 <h1 class="display-4 text-white mb-4 animated slideInRight">PMII Kabupaten Tangerang</h1>
                 <p class="text-white mb-4 animated slideInRight">Progresif, Kreatif, Transformatif</p>
-                <a href="" class="btn btn-light py-sm-3 px-sm-5 rounded-pill me-3 animated slideInRight">Read More</a>
-                <a href="#Whatsapp" class="btn btn-outline-light py-sm-3 px-sm-5 rounded-pill animated slideInRight">Contact Us</a>
+                <a href="https://wa.me/+6287777822220" class="btn btn-outline-light py-sm-3 px-sm-5 rounded-pill animated slideInRight">Contact Us</a>
             </div>
-            <div class="col-lg-6 align-self-end text-center text-lg-end">
+            <div class="col-lg-6 align-self-end text-center text-lg-end mt-2">
                 <img class="img-fluid" src="img/hero-img1.jpg" alt="">
             </div>
         </div>
@@ -59,13 +58,10 @@ include "header.php";
             <div class="col-lg-6 wow fadeIn" data-wow-delay="0.5s">
                 <div class="btn btn-sm border rounded-pill text-primary px-3 mb-3">About Us</div>
                 <h1 class="mb-4">Pergerakan Mahasiswa Islam Indonesia Kabupaten Tangerang</h1>
-                <p class="mb-4">Tempor erat elitr rebum at clita. Diam dolor diam ipsum et tempor sit. Aliqu diam
-                    amet diam et eos labore. Clita erat ipsum et lorem et sit, sed stet no labore lorem sit. Sanctus
-                    clita duo justo et tempor eirmod magna dolore erat amet</p>
-                <p class="mb-4">Aliqu diam amet diam et eos labore. Clita erat ipsum et lorem et sit, sed stet no
-                    labore lorem sit. Sanctus clita duo justo et tempor.</p>
+                <p class="mb-4">PMII merupakan organisasi gerakan dan kaderisasi yang berlandaskan islam ahlussunah waljamaah. Berdiri sejak tanggal 17 April 1960 di Surabaya dan hingga lebih dari setengah abad kini PMII terus eksis untuk memberikan kontribusi bagi kemajuan bangsa dan negara. </p>
+                <p class="mb-4">Memiliki tujuan membentuk pribadi muslim Indonesia yang bertaqwa kepada Alloh Swt, berbudi luhur, berilmu, cakap, dan bertangung jawab dalam mengamalkan ilmunya serta komitmen memperjuangkan cita-cita kemerdekaan Indonesia.</p>
                 <div class="d-flex align-items-center mt-4">
-                    <a class="btn btn-primary rounded-pill px-4 me-3" href="">Contact Us</a>
+                    <a class="btn btn-primary rounded-pill px-4 me-3" href="https://wa.me/+6287777822220">Contact Us</a>
                     <a class="btn btn-outline-primary btn-square me-3" href="https://www.instagram.com/pcpmiitangerang?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="><i class="fab fa-instagram"></i></a>
                 </div>
             </div>
@@ -164,7 +160,7 @@ include "header.php";
 
 
 <!-- Team Start -->
-<div class="container-fluid bg-light py-5">
+<div class="container-fluid bg-light py-5" id="team">
     <div class="container py-5">
         <div class="row g-5 align-items-center">
             <div class="col-lg-5 wow fadeIn" data-wow-delay="0.1s">
@@ -178,27 +174,21 @@ include "header.php";
                         <div class="row g-4">
                             <div class="col-12 wow fadeIn" data-wow-delay="0.1s">
                                 <div class="team-item bg-white text-center rounded p-4 pt-0">
-                                    <img class="img-fluid rounded-circle p-4" src="img/team-1.jpg" alt="">
-                                    <h5 class="mb-0">Boris Johnson</h5>
-                                    <small>Founder & CEO</small>
+                                    <img class="img-fluid rounded-circle p-4" src="img/hero-img1.jpg" alt="">
+                                    <h5 class="mb-0">Pindo Alam Samsara Ruska</h5>
+                                    <small>Ketua Umum</small>
                                     <div class="d-flex justify-content-center mt-3">
-                                        <a class="btn btn-square btn-primary m-1" href=""><i class="fab fa-facebook-f"></i></a>
-                                        <a class="btn btn-square btn-primary m-1" href=""><i class="fab fa-twitter"></i></a>
-                                        <a class="btn btn-square btn-primary m-1" href=""><i class="fab fa-instagram"></i></a>
-                                        <a class="btn btn-square btn-primary m-1" href=""><i class="fab fa-linkedin-in"></i></a>
+                                        <a class="btn btn-square btn-primary m-1" href="https://www.instagram.com/pindo_alam?igsh=NTc4MTIwNjQ2YQ=="><i class="fab fa-instagram"></i></a>
                                     </div>
                                 </div>
                             </div>
                             <div class="col-12 wow fadeIn" data-wow-delay="0.5s">
                                 <div class="team-item bg-white text-center rounded p-4 pt-0">
-                                    <img class="img-fluid rounded-circle p-4" src="img/team-2.jpg" alt="">
-                                    <h5 class="mb-0">Adam Crew</h5>
-                                    <small>Executive Manager</small>
+                                    <img class="img-fluid rounded-circle p-4" src="img/bedum.jpg" alt="">
+                                    <h5 class="mb-0">Muhammad Syaeful Abdi</h5>
+                                    <small>Bendahara Umum</small>
                                     <div class="d-flex justify-content-center mt-3">
-                                        <a class="btn btn-square btn-primary m-1" href=""><i class="fab fa-facebook-f"></i></a>
-                                        <a class="btn btn-square btn-primary m-1" href=""><i class="fab fa-twitter"></i></a>
-                                        <a class="btn btn-square btn-primary m-1" href=""><i class="fab fa-instagram"></i></a>
-                                        <a class="btn btn-square btn-primary m-1" href=""><i class="fab fa-linkedin-in"></i></a>
+                                        <a class="btn btn-square btn-primary m-1" href="https://www.instagram.com/abdi_cloth98?igsh=NTc4MTIwNjQ2YQ=="><i class="fab fa-instagram"></i></a>
                                     </div>
                                 </div>
                             </div>
@@ -208,27 +198,21 @@ include "header.php";
                         <div class="row g-4">
                             <div class="col-12 wow fadeIn" data-wow-delay="0.3s">
                                 <div class="team-item bg-white text-center rounded p-4 pt-0">
-                                    <img class="img-fluid rounded-circle p-4" src="img/team-3.jpg" alt="">
-                                    <h5 class="mb-0">Kate Winslet</h5>
-                                    <small>Co Founder</small>
+                                    <img class="img-fluid rounded-circle p-4" src="img/sekretaris.jpg" alt="">
+                                    <h5 class="mb-0">Trisyahrizal</h5>
+                                    <small>Sekretaris Umum</small>
                                     <div class="d-flex justify-content-center mt-3">
-                                        <a class="btn btn-square btn-primary m-1" href=""><i class="fab fa-facebook-f"></i></a>
-                                        <a class="btn btn-square btn-primary m-1" href=""><i class="fab fa-twitter"></i></a>
-                                        <a class="btn btn-square btn-primary m-1" href=""><i class="fab fa-instagram"></i></a>
-                                        <a class="btn btn-square btn-primary m-1" href=""><i class="fab fa-linkedin-in"></i></a>
+                                        <a class="btn btn-square btn-primary m-1" href="https://www.instagram.com/trisyahrizalll?igsh=NTc4MTIwNjQ2YQ=="><i class="fab fa-instagram"></i></a>
                                     </div>
                                 </div>
                             </div>
                             <div class="col-12 wow fadeIn" data-wow-delay="0.7s">
                                 <div class="team-item bg-white text-center rounded p-4 pt-0">
-                                    <img class="img-fluid rounded-circle p-4" src="img/team-4.jpg" alt="">
-                                    <h5 class="mb-0">Cody Gardner</h5>
-                                    <small>Project Manager</small>
+                                    <img class="img-fluid rounded-circle p-4" src="img/ajis.jpg" alt="">
+                                    <h5 class="mb-0">Abdul Ajis</h5>
+                                    <small>Wakil Ketua Bidang Eksternal</small>
                                     <div class="d-flex justify-content-center mt-3">
-                                        <a class="btn btn-square btn-primary m-1" href=""><i class="fab fa-facebook-f"></i></a>
-                                        <a class="btn btn-square btn-primary m-1" href=""><i class="fab fa-twitter"></i></a>
-                                        <a class="btn btn-square btn-primary m-1" href=""><i class="fab fa-instagram"></i></a>
-                                        <a class="btn btn-square btn-primary m-1" href=""><i class="fab fa-linkedin-in"></i></a>
+                                        <a class="btn btn-square btn-primary m-1" href="https://www.instagram.com/azizpatiwara?igsh=NTc4MTIwNjQ2YQ=="><i class="fab fa-instagram"></i></a>
                                     </div>
                                 </div>
                             </div>

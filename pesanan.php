@@ -7,7 +7,7 @@ if (!isset($_SESSION["login_anggota"])) {
 }
 $sql_user = sql("SELECT * FROM user WHERE id_user='$_SESSION[id_anggota]'");
 $user = $sql_user->fetch_assoc();
-$sql_produk = sql("SELECT * FROM transaksi INNER JOIN produk ON transaksi.id_produk=produk.id_produk WHERE id_user='$_SESSION[id_anggota]'");
+$sql_produk = sql("SELECT * FROM transaksi INNER JOIN produk ON transaksi.id_produk=produk.id_produk WHERE id_user='$_SESSION[id_anggota]' ORDER BY id_transaksi DESC");
 
 include 'header.php';
 
@@ -73,7 +73,7 @@ include 'header.php';
 
                             <?php if ($produk['status_transaksi'] == "Belum Diproses") { ?>
                                 <div class="col-3 align-self-center text-center">
-                                    <button type="button" class="btn btn-info">
+                                    <button type="button" class="btn btn-warning">
                                         Belum Diproses
                                     </button>
                                 </div>

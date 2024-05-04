@@ -17,7 +17,7 @@ if (isset($_POST["submit"])) {
     $tanggal_transaksi = date("y-m-d");
     $total_transaksi = $produk['harga_produk'];
     $komisariat = $_POST["komisariat"];
-    $status = "Sedang Diproses";
+    $status = "Belum Diproses";
     $sumber = @$_FILES['bukti_bayar']['tmp_name'];
     $target = 'img/bukti_bayar/';
     $nama_bukti_bayar = @$_FILES['bukti_bayar']['name'];

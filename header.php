@@ -57,6 +57,7 @@
             <a href="#about" class="nav-item nav-link active">About</a>
             <a href="#kaderisasi" class="nav-item nav-link">Kaderisasi</a>
             <a href="#shop" class="nav-item nav-link">Shop</a>
+            <a href="#team" class="nav-item nav-link">Pengurus</a>
             <?php if (!isset($_SESSION['login_anggota'])) { ?>
               <a href="login.php" class="nav-item nav-link">Login</a>
             <?php } else {
