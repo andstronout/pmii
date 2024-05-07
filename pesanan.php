@@ -61,11 +61,12 @@ include 'header.php';
                 <?php while ($produk = $sql_produk->fetch_assoc()) { ?>
                     <form action="" method="post?id=<?= $produk['id_transaksi']; ?>">
                         <div class="row mt-5">
-                            <div class="col-lg-3 align-self-end text-center text-lg-end">
+                            <div class="col-lg-3 align-self-end text-center">
+                                <h5 class="text-white">ID Transaksi : <?= $produk['id_pesanan']; ?></h5>
                                 <img class="img-fluid" src="img/produk/<?= $produk['gambar_produk']; ?>" alt="" style="max-height: 300px;">
                             </div>
                             <div class="col-3 align-self-center text-center">
-                                <h5 class="text-white"><?= $produk['nama_produk']; ?></h5>
+                                <h5 class="text-white"><?= $produk['nama_produk']; ?> (<?= $produk['ukuran']; ?>)</h5>
                             </div>
                             <div class="col-3 align-self-center text-center">
                                 <h5 class="text-white">Rp. <?= number_format($produk['harga_produk']); ?></h5>

@@ -79,33 +79,33 @@ if (isset($_POST["submit"])) {
                     <h1 class="text-white mb-4">Formulir Pendaftaran Mapaba</h1>
                     <div class="position-relative w-100 mt-3 mb-2">
                         <label for="" class="mb-2 px-2 text-white">Nomor Induk Kewarganegaraan</label>
-                        <input class="form-control border-0 rounded-pill w-100 ps-4 pe-5" type="text" placeholder="Masukan Nomor Induk Kewarganegaraan" value="<?= $user['nik']; ?>" name="nik" style="height: 48px;" required>
+                        <input class="form-control border-0 rounded-pill w-100 ps-4 pe-5" type="text" placeholder="Masukan Nomor Induk Kewarganegaraan" value="<?= $user['nik']; ?>" name="nik" style="height: 48px;" required disabled>
                     </div>
                     <div class="position-relative w-100 mt-3 mb-2">
                         <label for="" class="mb-2 px-2 text-white">Nomor Pokok Mahasiswa</label>
-                        <input class="form-control border-0 rounded-pill w-100 ps-4 pe-5" type="text" placeholder="Masukan Nomor Pokok Mahasiswa" value="<?= $user['npm']; ?>" name="npm" style="height: 48px;" required>
+                        <input class="form-control border-0 rounded-pill w-100 ps-4 pe-5" type="text" placeholder="Masukan Nomor Pokok Mahasiswa" value="<?= $user['npm']; ?>" name="npm" style="height: 48px;" required disabled>
                     </div>
                     <div class="position-relative w-100 mt-3 mb-2">
                         <label for="" class="mb-2 px-2 text-white">Nama Lengkap</label>
-                        <input class="form-control border-0 rounded-pill w-100 ps-4 pe-5" type="text" placeholder="Masukan Nama Lengkap" value="<?= $user['nama_user']; ?>" name="nama_user" style="height: 48px;" required>
+                        <input class="form-control border-0 rounded-pill w-100 ps-4 pe-5" type="text" placeholder="Masukan Nama Lengkap" value="<?= $user['nama_user']; ?>" name="nama_user" style="height: 48px;" required disabled>
                     </div>
                     <div class="position-relative w-100 mt-3 mb-2">
                         <label for="" class="mb-2 px-2 text-white">Nomor Handphone</label>
-                        <input class="form-control border-0 rounded-pill w-100 ps-4 pe-5" type="text" placeholder="Masukan Nomor Handphone" value="<?= $user['nomor_hp']; ?>" name="nomor_hp" style="height: 48px;" required>
+                        <input class="form-control border-0 rounded-pill w-100 ps-4 pe-5" type="text" placeholder="Masukan Nomor Handphone" value="<?= $user['nomor_hp']; ?>" name="nomor_hp" style="height: 48px;" required disabled>
                     </div>
                     <div class="position-relative w-100 mt-3 mb-2">
                         <label for="" class="mb-2 px-2 text-white">Tempat, Tanggal lahir</label>
-                        <input class="form-control border-0 rounded-pill w-100 ps-4 pe-5" type="text" placeholder="Tempat, Tanggal Lahir" value="<?= $user['ttl']; ?>" name="ttl" style="height: 48px;" required>
+                        <input class="form-control border-0 rounded-pill w-100 ps-4 pe-5" type="text" placeholder="Tempat, Tanggal Lahir" value="<?= $user['ttl']; ?>" name="ttl" style="height: 48px;" required disabled>
                     </div>
             </div>
             <div class="col-md-6 px-5 newsletter-text wow fadeIn" data-wow-delay="0.5s">
                 <div class="position-relative w-100 mt-3 mb-2">
                     <label for="" class="mb-2 px-2 text-white">Asal Kampus</label>
-                    <input class="form-control border-0 rounded-pill w-100 ps-4 pe-5" type="text" placeholder="Masukan Asal Kampus" value="<?= $user['asal_kampus']; ?>" name="asal_kampus" style="height: 48px;" required>
+                    <input class="form-control border-0 rounded-pill w-100 ps-4 pe-5" type="text" placeholder="Masukan Asal Kampus" value="<?= $user['asal_kampus']; ?>" name="asal_kampus" style="height: 48px;" required disabled>
                 </div>
                 <div class="position-relative w-100 mt-3 mb-2">
                     <label for="" class="mb-2 px-2 text-white">Alamat</label>
-                    <input class="form-control border-0 rounded-pill w-100 ps-4 pe-5" type="text" placeholder="Masukan Alamat" value="<?= $user['alamat']; ?>" name="alamat" style="height: 48px;" required>
+                    <input class="form-control border-0 rounded-pill w-100 ps-4 pe-5" type="text" placeholder="Masukan Alamat" value="<?= $user['alamat']; ?>" name="alamat" style="height: 48px;" required disabled>
                 </div>
                 <div class="position-relative w-100 mt-3 mb-2">
                     <label for="" class="mb-2 px-2 text-white">Tanggal PKL</label>

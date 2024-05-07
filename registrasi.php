@@ -6,28 +6,47 @@ if (isset($_SESSION['login_anggota'])) {
 }
 
 if (isset($_POST["submit"])) {
-  $nik = $_POST["nik"];
-  $npm = $_POST["npm"];
+  $nik_input = $_POST["nik"];
+  $npm_input = $_POST["npm"];
   $nama = $_POST["nama_user"];
-  $email = $_POST["email"];
+  $email_input = $_POST["email"];
   $ttl = $_POST["ttl"];
   $asal_kampus = $_POST["asal_kampus"];
   $nomor_hp = $_POST["nomor_hp"];
   $alamat = $_POST["alamat"] . ' ' . $_POST["kota"] . '-' . $_POST["provinsi"] . ' ' . 'Kode Pos : ' . $_POST["kodepos"];
   $password = md5($_POST["password"]);
-  $sql_user = sql("SELECT email FROM user WHERE email='$_POST[email]'");
-  $user = $sql_user->fetch_assoc();
-  if (!empty($user)) {
+
+  $sql_email = sql("SELECT email FROM user WHERE email='$email_input'");
+  $sql_nik = sql("SELECT nik FROM user WHERE nik='$nik_input'");
+  $sql_npm = sql("SELECT npm FROM user WHERE npm='$npm_input'");
+
+  $row_email = mysqli_num_rows($sql_email);
+  $row_nik = mysqli_num_rows($sql_nik);
+  $row_npm = mysqli_num_rows($sql_npm);
+
+  if ($row_email > 0) {
     echo "
         <script>
         alert('Email sudah digunakan');
         document.location.href = 'registrasi.php';
         </script>
         ";
+  } elseif ($row_npm > 0) {
+    echo "
+        <script>
+        alert('Nomor Pokok Mahasiswa sudah digunakan');
+        document.location.href = 'registrasi.php';
+        </script>
+        ";
+  } elseif ($row_nik > 0) {
+    echo "
+        <script>
+        alert('Nomor Induk Kewarganegaraan sudah digunakan');
+        document.location.href = 'registrasi.php';
+        </script>
+        ";
   } else {
-    // var_dump($nomor_hp);
-    $tambah = sql("INSERT INTO user (nik, npm, nama_user, email, `password`, nomor_hp, ttl, asal_kampus, alamat, `status`, `level`) VALUES ('$nik', '$npm', '$nama', '$email','$password','$nomor_hp','$ttl','$asal_kampus','$alamat','Calon Anggota','1')");
-    // INI BARU DI UBAH
+    $tambah = sql("INSERT INTO user ( nik, npm, nama_user, email, `password`, nomor_hp, ttl, asal_kampus, alamat, `status`, `level`) VALUES ('$nik_input', '$npm_input', '$nama', '$email_input','$password','$nomor_hp','$ttl','$asal_kampus','$alamat','Calon Anggota','1')");
     echo "
         <script>
         alert('Data berhasil Ditambahkan');
@@ -36,6 +55,7 @@ if (isset($_POST["submit"])) {
         ";
   }
 }
+
 ?>
 
 <!DOCTYPE html>
@@ -61,10 +81,10 @@ if (isset($_POST["submit"])) {
             </div>
 
             <div class="mb-3">
-              <input type="text" class="form-control" id="nik" aria-describedby="nikHelp" placeholder="Masukan Nomor Induk Kewarganegaraan" name="nik" required>
+              <input type="text" onkeypress="return (event.charCode !=8 && event.charCode ==0 || (event.charCode >= 48 && event.charCode <= 57))" class="form-control" id="nik" aria-describedby="nikHelp" placeholder="Masukan Nomor Induk Kewarganegaraan" name="nik" required>
             </div>
             <div class="mb-3">
-              <input type="text" class="form-control" id="npm" aria-describedby="npmHelp" placeholder="Masukan Nomor Pokok Mahasiswa" name="npm" required>
+              <input type="text" onkeypress="return (event.charCode !=8 && event.charCode ==0 || (event.charCode >= 48 && event.charCode <= 57))" class="form-control" id="npm" aria-describedby="npmHelp" placeholder="Masukan Nomor Pokok Mahasiswa" name="npm" required>
             </div>
             <div class="mb-3">
               <input type="text" class="form-control" id="nama" aria-describedby="namaHelp" placeholder="Masukan Nama Lengkap" name="nama_user" required>

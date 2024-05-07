@@ -29,10 +29,10 @@ $query = $sql->fetch_assoc();
             </div>
 
             <div class="mb-3">
-              <input type="text" class="form-control" id="nik" aria-describedby="nikHelp" placeholder="Masukan Nomor Induk Kewarganegaraan" value="<?= $query['nik']; ?>" name="nik" required>
+              <input type="text" class="form-control" onkeypress="return (event.charCode !=8 && event.charCode ==0 || (event.charCode >= 48 && event.charCode <= 57))" id="nik" aria-describedby="nikHelp" placeholder="Masukan Nomor Induk Kewarganegaraan" value="<?= $query['nik']; ?>" name="nik" required>
             </div>
             <div class="mb-3">
-              <input type="text" class="form-control" id="npm" aria-describedby="npmHelp" placeholder="Masukan Nomor Pokok Mahasiswa" value="<?= $query['npm']; ?>" name="npm" required>
+              <input type="text" class="form-control" onkeypress="return (event.charCode !=8 && event.charCode ==0 || (event.charCode >= 48 && event.charCode <= 57))" id="npm" aria-describedby="npmHelp" placeholder="Masukan Nomor Pokok Mahasiswa" value="<?= $query['npm']; ?>" name="npm" required>
             </div>
             <div class="mb-3">
               <input type="text" class="form-control" id="nama" aria-describedby="namaHelp" placeholder="Masukan Nama Lengkap" name="nama_user" value="<?= $query['nama_user']; ?>" required>

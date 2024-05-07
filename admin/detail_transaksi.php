@@ -44,6 +44,7 @@ if (isset($_POST["submit"])) {
               <th width=5%>No</th>
               <th>Nama Produk</th>
               <th>Komisariat</th>
+              <th>Ukuran</th>
             </tr>
           </thead>
           <tbody>
@@ -52,6 +53,7 @@ if (isset($_POST["submit"])) {
                 <th class="text-center"><?= $no; ?></th>
                 <th><?= $produk['nama_produk']; ?></th>
                 <th><?= $produk['komisariat']; ?></th>
+                <th><?= $produk['ukuran']; ?></th>
               </tr>
             <?php
               $no++;
@@ -86,7 +88,7 @@ if (isset($_POST["submit"])) {
 <footer class="sticky-footer bg-white">
   <div class="container my-auto">
     <div class="copyright text-center my-auto">
-      <span>Copyright &copy; Nadia Ryan Jewelry 2023</span>
+      <span>Copyright &copy; PMII Kabupaten Tangerang 2024</span>
     </div>
   </div>
 </footer>
@@ -152,14 +154,14 @@ if (isset($_POST["submit"])) {
           extend: 'excelHtml5',
           title: 'Data Pesanan Barang',
           exportOptions: {
-            columns: [0, 1, 2]
+            columns: [0, 1, 2, 3]
           }
         },
         {
           extend: 'pdfHtml5',
           title: 'Data Pesanan Barang',
           exportOptions: {
-            columns: [0, 1, 2]
+            columns: [0, 1, 2, 3]
           }
         }
       ]

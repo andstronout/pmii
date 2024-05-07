@@ -12,12 +12,12 @@ if (!isset($_SESSION["login_admin"])) {
 <div class="container-fluid">
 
   <!-- Page Heading -->
-  <div class="d-sm-flex align-items-center justify-content-between">
+  <div class="d-sm-flex align-items-center justify-content-center">
     <div class="card bg-dark text-white">
-      <img src="../images/bg-hero.jpg" class="card-img" alt="..." style="height: 440px; width: 1000px;">
+      <img src="../img/about-img1.png" class="card-img" alt="..." style="height: 440px; width: 500px;">
       <div class="card-img-overlay text-center" style="margin-top: 150px;">
-        <h3 class="card-title text-white">NADIA RYAN JEWELRY</h3>
-        <h5 class="card-text text-white">Perhiasan Berkilauan, Mewujudkan Impian Kecil Anda Menjadi Nyata</h5>
+        <h3 class="card-title text-white">PMII Kabupaten Tangerang</h3>
+        <h5 class="card-text text-white">Progresif, Kreatif, Transformatif</h5>
       </div>
     </div>
   </div>
@@ -32,7 +32,7 @@ if (!isset($_SESSION["login_admin"])) {
 <footer class="sticky-footer bg-white">
   <div class="container my-auto">
     <div class="copyright text-center my-auto">
-      <span>Copyright &copy; Nadia Ryan Jewelry 2023</span>
+      <span>Copyright &copy; PMII Kabupaten Tangerang 2024</span>
     </div>
   </div>
 </footer>

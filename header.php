@@ -67,6 +67,8 @@
               <div class="nav-item dropdown">
                 <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Hallo <?= $user['nama_user']; ?></a>
                 <div class="dropdown-menu bg-light mt-2">
+                  <a href="#" class="dropdown-item">Status : <?= $user['status']; ?></a>
+                  <hr>
                   <a href="pesanan.php" class="dropdown-item">Pesanan Anda</a>
                   <a href="ubah_password.php" class="dropdown-item">Ubah Password</a>
                   <a href="ubah_profil.php" class="dropdown-item">Ubah Profil</a>

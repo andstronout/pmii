@@ -36,7 +36,7 @@ if (isset($_POST["submit"])) {
     ";
     } else {
         $pindah = move_uploaded_file($sumber, $target . $nama_bukti_bayar);
-        $tambah_transaksi = $conn->query("INSERT INTO transaksi (id_user,id_produk,tanggal_transaksi,total_transaksi,bukti_bayar,komisariat,status_transaksi) VALUES ('$id_user','$id_produk','$tanggal_transaksi','$total_transaksi','$nama_bukti_bayar','$komisariat','$status') ");
+        $tambah_transaksi = $conn->query("INSERT INTO transaksi (id_user,id_produk,tanggal_transaksi,total_transaksi,bukti_bayar, ukuran,komisariat,status_transaksi) VALUES ('$id_user','$id_produk','$tanggal_transaksi','$total_transaksi','$nama_bukti_bayar','$_POST[ukuran]','$komisariat','$status') ");
         $id_transaksi = $conn->insert_id;
         $t = time();
         $id_pesanan = "KBTNG-" . $t;
@@ -75,7 +75,7 @@ include 'header.php';
 <div class="container-fluid bg-primary newsletter py-5">
     <div class="container mb-5">
         <div class="row g-5">
-            <div class="col-md-8 px-5 newsletter-text wow fadeIn" data-wow-delay="0.5s">
+            <div class="col-md-8 px-4 newsletter-text wow fadeIn" data-wow-delay="0.5s">
                 <form action="" method="post" enctype="multipart/form-data">
                     <div class="row">
                         <div class="col">
@@ -83,26 +83,36 @@ include 'header.php';
                         </div>
                     </div>
                     <div class="row">
-                        <div class="col-lg-4 align-self-end text-center text-lg-end">
+                        <div class="col-lg-3 align-self-end text-center text-lg-end">
 
                         </div>
-                        <div class="col-4 align-self-center text-center">
+                        <div class="col-3 align-self-center text-center">
                             <h5 class="text-white">Nama Barang</h5>
                         </div>
-                        <div class="col-4 align-self-center text-center">
+                        <div class="col-3 align-self-center text-center">
                             <h5 class="text-white">Harga Barang</h5>
                         </div>
                     </div>
                     <div class="row mt-5">
-                        <div class="col-lg-4 align-self-end text-center text-lg-end">
+                        <div class="col-lg-3 align-self-end text-center text-lg-end">
                             <img class="img-fluid" src="img/produk/<?= $produk['gambar_produk']; ?>" alt="" style="max-height: 300px;">
                         </div>
-                        <div class="col-4 align-self-center text-center">
+                        <div class="col-3 align-self-center text-center">
                             <h5 class="text-white"><?= $produk['nama_produk']; ?></h5>
                         </div>
-                        <div class="col-4 align-self-center text-center">
+                        <div class="col-3 align-self-center text-center">
                             <h5 class="text-white">Rp. <?= number_format($produk['harga_produk']); ?></h5>
                         </div>
+                        <div class="col-3 align-self-center text-center">
+                            <select class="form-selectsm form-control border-0 rounded-pill w-100 ps-4 pe-5" name="ukuran" id="ukuran">
+                                <option selected disabled>- Pilih Ukuran -</option>
+                                <option value="S">S</option>
+                                <option value="M">M</option>
+                                <option value="L">L</option>
+                                <option value="XL">XL</option>
+                            </select>
+                        </div>
+
                     </div>
 
             </div>
@@ -116,7 +126,12 @@ include 'header.php';
                 </div>
                 <div class="position-relative w-100 mt-3 mb-2">
                     <label for="" class="mb-2 px-2 text-white">Komisariat Pengambilan</label>
-                    <input class="form-control border-0 rounded-pill w-100 ps-4 pe-5" type="text" placeholder="Masukan Komisariat" name="komisariat" style="height: 40px;" required>
+                    <select class="form-select-lg form-control border-0 rounded-pill w-100 ps-4 pe-5" aria-label="Default select example" required name="komisariat">
+                        <option selected disabled>- Pilih Komisariat -</option>
+                        <option value="Komisariat Universitas Insan Pembangunan">Komisariat Universitas Insan Pembangunan</option>
+                        <option value="Komisariat Universitas Cendikia Abditama">Komisariat Universitas Cendikia Abditama</option>
+                        <option value="Komisariat Universitas Tangerang Raya">Komisariat Universitas Tangerang Raya</option>
+                    </select>
                 </div>
                 <div class="position-relative w-100 mt-3 mb-2">
                     <label for="" class="mb-2 px-2 text-white">Bukti Bayar</label>

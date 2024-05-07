@@ -68,7 +68,7 @@ $no = 1;
 <footer class="sticky-footer bg-white">
   <div class="container my-auto">
     <div class="copyright text-center my-auto">
-      <span>Copyright &copy; Nadia Ryan Jewelry 2023</span>
+      <span>Copyright &copy; PMII Kabupaten Tangerang 2024</span>
     </div>
   </div>
 </footer>
@@ -134,14 +134,14 @@ $no = 1;
           extend: 'excelHtml5',
           title: 'Data Produk',
           exportOptions: {
-            columns: [0, 1, 2, 3, 4, 5]
+            columns: [0, 1, 2]
           }
         },
         {
           extend: 'pdfHtml5',
           title: 'Data Produk',
           exportOptions: {
-            columns: [0, 1, 2, 3, 4, 5]
+            columns: [0, 1, 2]
           }
         }
       ]
