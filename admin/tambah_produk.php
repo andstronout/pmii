@@ -61,7 +61,7 @@ if (isset($_POST["submit"])) {
         </div>
         <div class="mb-3">
           <label for="harga_produk" class="form-label">Harga Produk</label>
-          <input type="text" class="form-control" id="harga_produk" name="harga_produk" placeholder="Harga Produk" required>
+          <input type="text" class="form-control" id="harga_produk" name="harga_produk" placeholder="Harga Produk" onkeypress="return (event.charCode !=8 && event.charCode ==0 || (event.charCode >= 48 && event.charCode <= 57))" required>
         </div>
         <div class="mb-3">
           <label for="formFile" class="form-label">Gambar Produk</label>
